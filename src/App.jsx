@@ -4,16 +4,18 @@ import Header from "./Components/Header";
 import Inicio from "./Components/Inicio";
 import Sobre from "./Components/Sobre";
 import Projetos from "./Components/Projetos";
+import { GlobalStyle } from "./Styles/global";
 
 function App() {
   return (
     <>
+    <GlobalStyle/>
     <BrowserRouter>
     <Header/>
     <Routes>
       <Route path="/" element={<Inicio/>}/>
       <Route path="/sobre" element={<Sobre/>}/>
-      <Route />
+      <Route path="/projetos" element={<Projetos/>}/>
     </Routes>
     </BrowserRouter>
     </>
